@@ -4,7 +4,7 @@ public class StudentRecord
    private int [] scores;
    
    //Constructs a StudentRecord object with an array of scores.
-   public StudentRecord(int [] s)
+   public StudentRecord(int[] s)
    {
       scores = s;
    }
@@ -15,8 +15,14 @@ public class StudentRecord
     */
    private double average(int first, int last)
    {
-      return 0; //here so the class compiles
-   }
+     double sum = 0; 
+     for(int i = 0; i< scores.length; i++);
+       sum += scores[i];
+    }
+     double avg = sum/scores.length;
+     return avg;
+    }
+   
     
    /** returns true if each successive value in scores is greater than
     *  or equal to the previous value; false otherwise.
